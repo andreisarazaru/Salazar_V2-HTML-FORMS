@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Plats</title>
+
+  <link rel = "stylesheet" href = "styles.css">
+  <link rel = "icon" href = "icons/les-plats-favicon.svg">
+
+</head>
+<body>
+  <div class = "container">
+
+    <div class = "header">
+      <div class = "discount-message">
+        <h1>Summer Sale! Get up to 50% discount on every 5 boxes of croissant!</h1>
+      </div>
+      <div class = "logo-container">
+        <img src = "images/Les Plats-logo-black.png" id = "logo">
+      </div>
+      <div class = "short-description">
+        <h1>Bonjour! Serving high-class cuisine for more than a century. Different era, same flavor.</h1>
+      </div>
+      <div class = "search-container">
+        <img src = "icons/search.svg" id = "search-icon">
+        <input type = "text" id = "search-food" name = "search-food" placeholder= "What are you looking for?">
+      </div>
+    </div>
+
+    <div class = "product-list">
+      <div class = "product-1">
+        <img src = "images/muffin.jpg" class = "product-photo">
+        <h1 class = "product-name">Muffins</h1>
+        <h2 class = "product-price">₱ 89</h2>
+        <h3 class = "product-description">Indulge your cravings with our moist and fluffy muffins studded with rich chocolate chips. 
+          Perfect for breakfast on-the-go or as a sweet afternoon pick-me-up.</h3>
+      </div>
+      <div class = "product-2">
+        <img src = "images/croissant.jpg" class = "product-photo">
+        <h1 class = "product-name">Croissants</h1>
+        <h2 class = "product-price">₱ 79</h2>
+        <h3 class = "product-description">Dive into layers of golden, buttery perfection with our freshly baked croissants. 
+          Crisp on the outside, soft and fluffy on the inside, these French classics are a 
+          delightful treat any time of day.</h3>
+      </div>
+      <div class = "product-3">
+        <img src = "images/eclair.jpg" class = "product-photo">
+        <h1 class = "product-name">Eclairs</h1>
+        <h2 class = "product-price">₱ 69</h2>
+        <h3 class = "product-description"> Indulge in a heavenly combination of light, fluffy pastry shells filled with rich, 
+          creamy custard and topped with a luscious layer of glossy chocolate ganache. Each bite of
+           our eclairs is a decadent experience that will leave you craving more.</h3>
+       </div>
+       <div class = "product-4">
+        <img src = "images/macaroons.avif" class = "product-photo">
+        <h1 class = "product-name">Macaroons</h1>
+        <h2 class = "product-price">₱ 99</h2>
+        <h3 class = "product-description">Transport yourself to a patisserie in Paris with our delicate and colorful macarons. 
+          Each bite-sized treat features a crisp shell and a soft, chewy interior bursting with delightful flavors
+           like raspberry, pistachio, and salted caramel. </h3>
+       </div>
+       <div class = "product-5">
+        <img src = "images/crepe.jpg" class = "product-photo">
+        <h1 class = "product-name">Crepe</h1>
+        <h2 class = "product-price">₱ 69</h2>
+        <h3 class = "product-description">Experience a taste of Paris with our thin, lacy crepes filled with a medley of
+           fresh berries and drizzled with sweet maple syrup. Each bite is a symphony of flavors and textures.</h3>
+       </div>
+       <div class = "product-5">
+        <img src = "images/profiterole.avif" class = "product-photo">
+        <h1 class = "product-name">Profiterole</h1>
+        <h2 class = "product-price">₱ 69</h2>
+        <h3 class = "product-description">Treat yourself to our airy, golden profiteroles filled with luscious cream and topped
+           with a velvety chocolate ganache. A divine dessert that's sure to satisfy your sweet tooth.</h3>
+       </div>
+      </div>
+    
+    <div class = "submission-form">
+      <form class = "order-form">
+        <h1 class = "form-title">Fill this:</h1>
+        <div class = "form-row">
+          <label for = "name">Name: *&nbsp;</label>
+          <input type = "text" id = "user-name">
+        </div>
+        <div class = "form-row">
+          <label for = "email">Email: *&nbsp;</label>
+          <input type = "email" id = "user-email">
+        </div>
+        <div class = "form-row">
+          <label for = "age">Age: *&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type = "text" id = "user-age">
+        </div>
+        <div class = "form-row"> 
+          <label for ="pastry-type">Your chosen pastry: *</label>
+  <div class = "pastry-type">
+    <div class = "select">
+    <span class = "selected">Croissant</span>
+    <div class = "caret"></div>
+    </div>
+  <ul class = "menu">
+    <li class = "active">Croissant</li>
+    <li>Muffins</li>
+    <li>Eclairs</li>
+    <li>Macaroons</li>
+    <li>Eclairs</li>
+    <li>Crepe</li>
+    <li>Profiterole</li>
+   </ul>
+</div>
+        </div>
+        <div class = "form-row">
+          <input type = "radio" value = "dine-in" name = "order-mode">
+          <label>Dine In</label>
+          <input type = "radio" value = "take-home" name = "order-mode">
+          <label>Take Home</label>
+        </div>
+        <div class = "form-row">
+          <label>Notes to the baker:</label>
+          <textarea placeholder="Extra butter on top..." id = "textarea-notes"></textarea>
+        </div>
+        <div class = "button-container">
+          <div>
+            <button class = "place-order">Place Order</button>
+          </div>
+         <div>
+          <button class = "cancel">Cancel</button>
+         </div>
+        </div>
+      </form>
+    </div>
+    <div class = "footer">
+        <div class = "about-us">
+          <h1>About Les Plats</h1>
+          <h2>Les Plats aims to maintain its tradition and continue to pass its exquisite, tasty, addicting pastry recipes.
+            It was founded by Andre Salazar on February 28, 1892 amidst the war of France. Les Plats served as a supplement 
+            for the people — it saved them from hunger. As the business continues to grow, Les Plats' legacy is still spread by people.
+          </h2>
+        </div>
+        <div class = "branches">
+          <h1>List of Branches:</h1>
+          <ol>
+            <div>Abbey Road - London, England</div>
+            <div>Wall Street - New York City, USA</div>
+           <div>Nanjing Road - Shanghai, China</div>
+           <div>Katipunan Avenue - Quezon City, Metro Manila</div>
+            <div>Orchard Road - Singapore</div>
+          </ol>
+        </div>
+        <div class = "contact">
+          <h1>Contact us</h1>
+          <h2>Gmail: lesplats@gmail.com</h2>
+          <ol>
+            <ul>France: +3312345</ul>
+            <ul>USA: +12345</ul>
+            <ul>China: +8612345</ul>
+            <ul>Japan: +8112345</ul>
+            <ul>Philippines: +63123456</ul>
+          </ol>
+        </div>
+    </div>
+  </div>
+
+<script src = "script.js"></script>
+
+</body>
+</html>

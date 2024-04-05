@@ -1,0 +1,451 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.container
+{
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-template-rows: 1fr 4fr 1fr;
+}
+
+.header
+{
+  grid-column: 1 / 3;
+  grid-row: 1 / 1;
+}
+
+.header
+{
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-rows: 0.3fr 0.3fr 0.3fr;
+
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+
+
+.product-list
+{
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+}
+
+.product-list
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 0.3fr 0.3fr;
+
+  padding: 30px;
+  gap: 20px;
+}
+
+.submission-form
+{
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+.submission-form
+{
+  padding: 20px;
+}
+
+
+.footer
+{
+  background-color: #991b1b;
+  grid-column: 1 / 3;
+  grid-row: 3 / 3;
+
+  margin-top: 20px;
+}
+
+.discount-message
+{
+  grid-column: 1 / 3;
+  grid-row: 1 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+
+  padding: 5px;
+  border-bottom: 3px solid black;
+
+  background-color: #eab308;
+}
+
+.logo-container
+{
+  grid-column: 1 / 1;
+  grid-row: 2 / 4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 20px;
+}
+
+.short-description
+{
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  
+  padding: 15px;
+}
+
+.search-container
+{
+  grid-column: 2 / 2;
+  grid-row: 3 / 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+
+  margin-left: 1%;
+}
+
+#logo
+{
+  height: 60px;
+  width: 120px;
+}
+
+#search-icon
+{
+  height: 30px;
+  width: 30px;
+}
+
+#search-food
+{
+  width: 90%;
+  height: 80%;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+
+}
+
+#search-food:focus
+{
+  outline: none;
+}
+
+.product-photo
+{
+  height: 80px;
+  width: 130px;
+}
+
+.product-1,
+.product-2,
+.product-3,
+.product-4,
+.product-5,
+.product-6
+{
+  display: grid;
+  grid-template-columns: 0.5fr 1.3fr 0.2fr;
+  grid-template-rows: 0.1fr 0.5fr;
+  gap: 10px;
+
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.product-1:hover,
+.product-2:hover,
+.product-3:hover,
+.product-4:hover,
+.product-.product-5,
+.product-5:hover
+{
+  padding: 10px;
+  box-shadow: 5px 5px 10px  #a3a3a3;
+  
+}
+
+.product-photo
+{
+  grid-column: 1 / 1;
+  grid-row: 1 / 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.product-name
+{
+  grid-column: 2 / 2;
+
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.product-price
+{
+  grid-column: 3 / 3;
+}
+
+.product-description
+{
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.order-form
+{
+  border: 2px solid black;
+  padding: 30px;
+
+  height: 80%;
+  width: 70%;
+}
+
+.order-form
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+.form-title
+{
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#user-name,
+#user-age,
+#user-email
+{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+}
+
+#user-name:focus,
+#user-age:focus,
+#user-email:focus
+{
+  outline: none;
+}
+
+#textarea-notes
+{
+  width: 90%;
+
+  padding: 5px;
+  border: 1px dotted black;
+
+  resize: none;
+}
+
+#textarea-notes:focus
+{
+  outline: none;
+}
+
+
+.place-order,
+.cancel
+{
+  padding: 5px;
+  border: none;
+
+  background-color: #a3a3a3;
+
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.place-order:hover,
+.cancel:hover
+{
+  background-color: #737373;
+}
+
+.button-container
+{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+  gap: 50px;
+}
+
+.pastry-type
+{
+    width: 100%;
+    position: relative;
+    margin: 2em;
+}
+
+.pastry-type *
+{
+  box-sizing: border-box;
+}
+
+.select
+{
+  background: #a3a3a3;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.select-clicked
+{
+  box-shadow: 5px 5px solid black;
+}
+
+.select:hover
+{
+  background-color: #e5e5e5;
+}
+
+.caret
+{
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: 0.3s;
+}
+
+.caret-rotate
+{
+  transform: rotate(180deg);
+}
+
+.menu
+{
+  list-style: none;
+  padding: 5px;
+  
+  background: #e5e5e5;
+  border: none;
+  
+  box-shadow: 2px 2px 5px black;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.menu li
+{
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.menu li:hover
+{
+  background: #a3a3a3;
+}
+
+.active
+{
+  background: #a3a3a3;
+}
+
+.menu-open
+{
+  display: block;
+  opacity: 1;
+}
+
+.footer
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.about-us,
+.branches,
+.contact
+{
+  padding: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  color: #fecaca;
+}
+
+.about-us h1,
+.branches h1,
+.contact h1
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
